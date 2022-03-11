@@ -9,6 +9,7 @@ public class MoodAnalyzer {
             } else {
                 return "happy";
             }
+            
         } catch (NullPointerException exception) {
             throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NULL, "Invalid mood");
         }
