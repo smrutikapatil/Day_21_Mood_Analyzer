@@ -24,6 +24,7 @@ public class MoodAnalyzer {
             return "Sad";
         } else if (message.toLowerCase().contains("happy")) {
         }
+        
         return "Happy";
     }
 }
