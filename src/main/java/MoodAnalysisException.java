@@ -1,22 +1,14 @@
  public class MoodAnalysisException extends Exception {
-    public String message;
+     public String message;
 
-    public MoodAnalysisException(String message) {
-        super(message);
-    }
+     enum ExceptionType {
+         EMPTY, NULL;
+     }
 
-    @Override
-    public String getMessage() {
-        return message;
-    }
+     ExceptionType type;
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-}
-
-
-
-
-
-
+     public MoodAnalysisException(ExceptionType type, String message) {
+         this.message = message;
+         this.type = type;
+     }
+ }
