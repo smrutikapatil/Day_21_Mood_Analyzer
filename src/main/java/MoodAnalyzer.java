@@ -27,7 +27,10 @@ public class MoodAnalyzer {
             }
 
         } catch (NullPointerException e) {
-            return "Happy";
+            return "Happy"
+        if (message.toLowerCase().contains("sad")) {
+            return "Sad";
+        } else if (message.toLowerCase().contains("happy")) {
         }
     }
 }
