@@ -10,5 +10,6 @@
      public MoodAnalysisException(ExceptionType type, String message) {
          this.message = message;
          this.type = type;
+      
      }
  }
